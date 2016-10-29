@@ -28,15 +28,3 @@ var quotes = [{
 }];
 
 var currentQuote = quotes[Math.floor(Math.random() * (quotes.length))];
-
-$("#tweet").on("click", function() {
-  var text = currentQuote.quote.substring(0,120) + "... -" + currentQuote.author;
-  window.open("https://twitter.com/intent/tweet?text=" + encodeURIComponent(text));
-});
-
-$("#button").on("click", function() {
-  currentQuote = quotes[Math.floor(Math.random() * (quotes.length))];
-  $(".blockquote").empty();
-  $(".blockquote").append("<p><i class='fa fa-quote-left fa-2x'></i> " + currentQuote.quote + "</p><footer class='text-right'>" + currentQuote.author + "</footer>");
-  return currentQuote;
-});
