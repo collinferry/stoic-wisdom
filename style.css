@@ -1,0 +1,50 @@
+@keyframes bg-animate {
+    0%   {background-color: #505050;}
+    25%  {background-color: #606060;}
+    50%  {background-color: #505050;}
+    75%  {background-color: #606060;}
+    100% {background-color: #505050;}
+}
+  
+ .header {
+  margin-top:100px; 
+ 
+}
+
+.title {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+body {
+  background: #515151;
+  animation-name: bg-animate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.box-outer {
+    border-radius: 1%/2%;
+    background: white;
+    width: 50%;
+    margin: 0 auto; 
+}
+
+.blockquote {
+  margin: 34px;
+  border-left: 0;
+}
+
+.spacer-row {
+  height: 100;
+}
+
+.box-bottom {
+  height: 30px;
+}
+
+.foot-link a {
+color: #353535;
+}
+
+
